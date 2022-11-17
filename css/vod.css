@@ -1,0 +1,77 @@
+/* boites vod */
+.vod-box{
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    height: 100%;
+    background-color: #ec135c;
+    padding: 5px;
+    border-radius: 5px;
+    transition:all .25s;
+  }
+
+.vod-box:hover{
+    transform:scale(1.5); 
+    -webkit-transform:scale(1.5);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.one-vod img:hover{
+    content: url("https://i.ytimg.com/an_webp/b7FbYMb958g/mqdefault_6s.webp?du=3000&sqp=CJiXzZQG&rs=AOn4CLAKkqGp23N_Hq00UHbnLd64Q-7FJw");
+}
+
+.two-vod img:hover{
+    content: url("https://i.ytimg.com/an_webp/9-7zoI_9X5E/mqdefault_6s.webp?du=3000&sqp=COepzZQG&rs=AOn4CLADZfIieMPpd_Dkx3atwo-3J5EInQ");
+}
+
+.tree-vod img:hover{
+    content: url("https://i.ytimg.com/an_webp/iMBWKBmi7ak/mqdefault_6s.webp?du=3000&sqp=CLSazZQG&rs=AOn4CLBzJBmWbgSBTKTJzCL4Jd4oRp0yfA");
+}
+
+.one-vod{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+.two-vod{
+
+    grid-column: 2;
+    grid-row: 1; 
+  }
+
+.tree-vod{
+
+    grid-column: 3;
+    grid-row: 1;
+ 
+  }
+
+  /* version responsive boite vod */
+  @media screen and (max-width: 767px) {
+
+    .wrapper{
+        grid-row-gap: 5%;
+    } 
+
+    .one-vod{
+        grid-column: 1/5;
+        grid-row: 1;
+      }
+    
+    .two-vod{
+    
+        grid-column: 1/5;
+        grid-row: 2; 
+      }
+    
+    .tree-vod{
+    
+        grid-column: 1/5;
+        grid-row: 3;
+     
+      }
+  }

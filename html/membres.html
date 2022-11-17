@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel= "stylesheet" href= "../css/style.css">
+    <link rel= "stylesheet" href= "../css/membre.css">
+    <link rel="icon" type="icon.png" href="../images/favicon_io/android-chrome-512x512.png">
+    <script type="text/javascript" src="../js/javascript.js"></script>
+    
+    <title>Toudoom</title>
+  </head>
+
+  <body>
+
+   <!-- menu bar -->
+    <header>
+      <nav class="menu-container">
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+      
+        <a href="" class="menu-logo">
+          <img src="../images/Logos/Logo_Toudoum-08.png" alt="Toudoom"/>
+        </a>
+      
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./Index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="./evenements.html"">
+                Évènements
+              </a>
+            </li>
+            <li>
+              <a href="./vod.html">
+                VOD
+              </a>
+            </li>
+            <li>
+              <a href="./membres"  style="color: #ec135c;">
+                Membres
+              </a>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- menu ajouter membre tableau membre -->
+    <h2 style="text-align: center;"> Ajouter un membre </h2>
+            <form name="newMembre" action="#" class="box" id="newMembre" onsubmit="return false">
+                <strong>Nom</strong> 
+                <input type="text" name="nom" size="25" placeholder = "Nom" required>
+                <strong>Prénom</strong> 
+                <input type="text" name="prenom" size="25" placeholder = "Prenom" required>
+                <strong>Type : </strong>
+                <select name="type" size=1>
+                    <option>Membre</option>
+                    <option>Bureau Restreint</option>
+                    <option>Bureau Etendu</option>
+                    <option>Présentateur</option>
+                </select>
+                <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
+                <button type="button" class="btn"  onclick="supprimer()">Supprimer</button>
+
+            </form>
+    
+            <!-- tableau membre -->
+        <main>
+            <div class="box">
+                 
+                <table class="datatable">
+                    <thead>
+                        <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+        
+        </main>
+
+        <!-- footer -->
+    <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="https://www.facebook.com/Toudoom" target="_blank"><img src="../images/Réseaux/facebook.png" width="70%" style="text-align: center; vertical-align: middle;" alt=""></a>
+				<a href="https://www.twitch.tv/toudoom_" target="_blank"><img src="../images/Réseaux/twitch.png" width="70%" style="text-align: center; vertical-align: middle;" alt=""></a>
+				<a href="https://www.youtube.com/channel/UCCR0Sp9q2ZP4M_BcYbSOMaQ" target="_blank"><img src="../images/Réseaux/youtube.png" width="70%" style="text-align: center; vertical-align: middle;" alt=""></a>
+				<a href="https://instagram.com/toudoom" target="_blank"><img src="../images/Réseaux/Instagram-Logo-PNG-Background.png" width="70%" style="text-align: center; vertical-align: middle;" alt=""></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="./apropos.html">À Propos</a>
+				</p>
+
+				<p>Toudoom &copy; 2022</p>
+			</div>
+
+		</footer>
+
+
+  </body>
+</html>
